@@ -1,372 +1,623 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="legacy/font-awesome-4.0.0/css/font-awesome.min.css">
-    <title>Hudson Woods</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="legacy/css/bootstrap.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-
-<script type="text/javascript" src="http://use.typekit.net/wqx1grc.js"></script>
+<html>
+<head>
+<title>Hudson Woods - Where Design Meets Nature</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hudson Woods - Where Design Meets Nature">
+<meta name="keywords" content="Hudson Woods, hudson woods ny, New York Architecture, New York real estate">
+<meta name="geo.region" content="US-NY" />
+<meta name="geo.placename" content="Kerhonkson" />
+<meta name="geo.position" content="41.884013;-74.320194" />
+<meta name="ICBM" content="41.884013, -74.320194" />
+<meta property="og:latitude" content="41.884013" />
+<meta property="og:longitude" content="-74.320194" />
+<meta property="og:street-address" content="1 Ridgewood Road" />
+<meta property="og:locality" content="Kerhonkson" />
+<meta property="og:region" content=“NY" />
+<meta property="og:postal-code" content=“12446" />
+<meta property="og:country-name" content="USA" />
+<link href="css/main.css" rel="stylesheet">
+<script type="text/javascript" src="//use.typekit.net/zfx0usa.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
+<link rel="icon" type="image/png" href="favicon.ico">
 
-<style>
-.navbar-wrapper {height: 64px;position:fixed;top:0;left:0;z-index:99;width:100%;}
-.navbar {border:0px !important;}
-#navHeader {height: 64px;}
-#git_button {float:right;margin-top:22px;background-color: transparent;padding:5px 12px 4px;}
-#git_button:hover {background:#45454c !important;color:#f1e765;}
-#social i {font-size:60px;color:#dbdbdb;margin:10px 6%;}
-#social a {text-decoration: none}
-p#social {text-align: center}
-#social i:hover {color:#b6b6b6;}
-.lessMuted {color:#45454c;}
-.muteColor {color:#4c4f52;}
-#saveForm {background: #25b1bf;color:white;width:150px;}
-label{font-weight:bold;margin-bottom:5px;}
-form li {list-style: none;margin-bottom:25px;}
-.cinfo {font-size:14px;margin-bottom: 2px;}
-input,textarea {font-size:20px;}
-textarea {width:100%;}
-ul {padding-left:0px;}
-footer p {color:white;}
-#maincopy {background:white;text-align:center;margin-top:25px;display:none}
-#myCarousel .item{
-  height:600px;
-  background:no-repeat top center;
-}
-#logo{
-  width:auto;height:47px;
-}
-.carousel{
-  margin-top:64px;
-}
 
-.carousel-content{
-  max-width:1170px;
-  margin:0 auto;
-  width:90%;
-  padding-left:30px;
-  padding-right:30px;
-}
-.carousel h2{
-  margin-top:0;
-  font-size:76px;
-  line-height:80px;
-  width:54%;
-}
-.carousel p{
-  font-size:22px;
-  line-height:30px;
-  width:67%;
-}
-#item1 .carousel-content{
-  padding-top:104px;
-}
-#item1 .carousel-content h2{
-  color:#f1e765;
-}
-#item1 .carousel-content p{
-  color:#fff;
-}
+<body data-spy="scroll" data-target="#navbar-hudson">
 
-#item2 .carousel-content{
-  padding-top:94px;
-}
-#item2 .carousel-content h2{
-  color:#0099CC;
-}
-#item2 .carousel-content p{
-  color:#202020;
-}
-
-#item3 .carousel-content{
-  padding-top:182px;
-}
-#item4 .carousel-content h2{
-  color:#202020;
-  width:65%;
-}
-#item4 .carousel-content p{
-  color:#202020;
-}
-#item4 .carousel-content{
-  padding-top:186px;
-}
-#item3 .carousel-content h2{
-  color:#f1e765;
-}
-#item3 .carousel-content p{
-  color:#fff;
-}
-@media only screen and (min-width: 1600px) {
-  #myCarousel .item{background-size:cover;}
-}
-@media only screen and (min-width: 768px) {
-  #maincopy {display:block !important}
-  
-}
-@media only screen and (max-width: 1170px) {
-  .carousel-content{max-width:970px;}
-}
-@media only screen and (max-width: 992px) {
-  .carousel-content{max-width:750px;}
-}
-@media only screen and (max-width: 768px) {
-  .carousel-content{max-width:750px;width:auto;}
-}
-@media only screen and (max-width: 870px) {
-  #myCarousel .item{/*background-position-x:40%;background-size:cover;height:400px;*/}
-  .carousel h2, .carousel p{
-    width:100%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  #social i{margin:10px 5%;}
-  #item1 .carousel-content, #item2 .carousel-content, #item3 .carousel-content, #item4 .carousel-content{
-    padding-top:25px;
-  }
-  #myCarousel .item{background-size:cover;height:400px;}
-  .carousel-content{
-    
-    margin-left:15px;
-    margin-right:15px;
-    padding:25px 0 0;
-  }
-  .carousel h2{
-    font-size:40px;
-    line-height:44px;
-  }
-  .carousel p{
-    font-size:15px;
-    line-height:20px;
-  }
-}
-@media only screen and (max-width: 380px) {
-  #social i{margin:10px 3%;}
-}
-
-</style>
-
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper" style="background:#F2f0e6">
-      <div class="container">
-        <div class="navbar navbar-inverse navbar-static-top"  style="background:#F2f0e6">
-          <div class="container" id="navHeader">
-            <a type="button" class="btn btn-default tk-museo-slab" id="git_button" href="#contact" >Get in touch</a>
-            <div class="navbar-header">
-            <!--
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            -->
-              <img src="legacy/assets/HW_Logo_web_V2.png" style="margin-top: 7px;" id="logo">
-            </div>
-            
-            <div class="navbar-collapse collapse">
-            </div>
-          </div>
-        </div>
-
+<header>
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="nav navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-hudson">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span id="logo"></span>
       </div>
-    </div>
 
-
-        <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div id="item1" class="item active" style="background-image:url(legacy/assets/HWCarousel1.jpg)">
-          <div class="carousel-content container">
-            <h2 class="tk-museo-slab">Straight From the Source</h2>
-            <p class="tk-museo-slab">In the midst of the Hudson River Valley and just two hours from New York City, Hudson Woods takes you straight to the source &ndash; the place for nature and design, for family and friendships, for exploring what matters most to you.</p>
-          </div>
-        </div>
-        <div id="item2" class="item" style="background-image:url(legacy/assets/HWCarousel2.jpg)">
-          <div class="carousel-content container">
-            <h2 class="tk-museo-slab">Where Design Meets Nature</h2>
-            <p class="tk-museo-slab">Set amidst forests and meadows with sweeping mountain views, Hudson Woods homes offer modern design that blends seamlessly with the natural surroundings.</p>
-          </div>
-        </div>
-        <div id="item3" class="item" style="background-image:url(legacy/assets/HWCarousel3.jpg)">
-          <div class="carousel-content container">
-            <h2 class="tk-museo-slab">Smart Design</h2>
-            <p class="tk-museo-slab">Each home features modern, eco-friendly design constructed from materials sourced from surrounding areas. The homes and site set new standards for design and sustainability excellence.</p>
-          </div>
-        </div>
-        <div id="item4" class="item" style="background-image:url(legacy/assets/HWCarousel4.jpg)">
-          <div class="carousel-content container">
-            <h2 class="tk-museo-slab">True Experience</h2>
-            <p class="tk-museo-slab">More than a place, Hudson Woods is an experience that opens doors to discovering the things that matter. Family. Friends. Sport. Craft. Hudson Woods lets you access it all.</p>
-          </div>
-        </div>
-      </div>
-      <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
-    </div><!-- /.carousel -->
-
-    <div class="container" id="maincopy">
-      <div class="row">
-        <p class="tk-museo-slab lessMuted" style="font-size:29pt" >"To Create Authentic, Meaningful Experiences At Every Turn"</p>
-        <p class="tk-museo-slab lessMuted" style="font-size:16pt">Drew Lang, Lang Architecture</p>
-      </div>
-    </div>
-
-    <div style="background:#f1f1f1;">
-    <div class="container" style="padding-top:30px">
-      <div class="row">
-        <div class="col-md-6">
-          <p style="font-size:16pt" class="tk-museo-slab muteColor" id="contact">Get In Touch to Learn More!</h3>
-
-          <!-- -->
-          <form id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-                action="https://sandersonj.wufoo.com/forms/z1jr7bc1537af2/#public">
-
-
-          <ul>
-
-          <li id="foli1" class="notranslate      ">
-          <label class="desc muteColor tk-museo-slab " id="title8" for="Field8" style="display:block;">
-          Name
-          </label>
-
-          <input id="Field8" name="Field8" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" required style="width:100%" />
-
-
-
-
-
-
-
-
-          </li>
-          <li id="foli3" class="notranslate      ">
-          <label class="desc muteColor tk-museo-slab " id="title3" for="Field3">
-          Email
-          </label>
-          <div>
-          <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" required style="width:100%" /> 
-          </div>
-          </li>
-          <li id="foli4" 
-          class="notranslate      "><label class="desc muteColor tk-museo-slab " id="title4" for="Field4">
-          How Can We Help?
-          </label>
-
-          <div>
-            <textarea id="Field4"name="Field4"class="field textarea medium"spellcheck="true"rows="6" cols="50"tabindex="4"onkeyup=""></textarea>
-          </div>
-          </li> 
-          <li class="buttons ">
-            <div>
-              <input id="saveForm" name="saveForm" class="tk-museo-slab btn btTxt submit" 
-              type="submit" value="Submit"/>
-           </div>
-          </li>
-
-          <li class="hide">
-            <label for="comment">Do Not Fill This Out</label>
-            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-            <input type="hidden" id="idstamp" name="idstamp" value="kDKnwgsxUQRl99RUwj7mCA+Rjx0E7+LyTxdubka1d5c=" />
-          </li>
+      <div class="collapse navbar-collapse" id="navbar-hudson">
+        <ul class="nav navbar-nav">
+          <li id="logoText"><a class="main-nav scroll" href="#header"></a></li>
         </ul>
-      </form> 
-          <!-- -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="main-nav scroll" href="#smart-design-anchor" >Smart Design</a></li>
+          <li><a class="main-nav scroll" href="#real-living-anchor" >Real Living</a></li>
+          <li><a class="main-nav scroll" href="#true-experience-anchor" >True Experience</a></li>
+          <li><a class="main-nav scroll" href="#contact-anchor" >Get In Touch</a></li>
+          <li><a class="main-nav scroll" href="/blog" >Journal</a></li>
+        </ul>
+      </div>
+    </nav>
+</header>
 
 
-        </div>
-        <div class="col-md-6">
-          <div style="padding:15px;background:white">
-            <p style="font-size:21px;margin-bottom:40px" class="muteColor tk-museo-slab">Follow Us</p>
-            <p id="social">
-            <a href="https://www.facebook.com/hudsonwoodsny">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="http://www.twitter.com/hudsonwoodsny">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="http://www.pinterest.com/hudsonwoodsny/">
-              <i class="fa fa-pinterest"></i>
-            </a>
-            <a href="http://instagram.com/hudsonwoodsny">
-              <i class="fa fa-instagram"></i>
-            </a>
-            </p>
-          </div>
-          <div class="row" style="margin-top:50px">
-            <div class="col-md-6">
-              <p class="cinfo tk-museo-slab muteColor">225 Broadway, Suite 3001</p>
-              <p class="cinfo tk-museo-slab muteColor">New York, NY 10007</p> 
+<span id="header"></span>  
+
+
+<section id="intro" class="feature-intro" data-speed="5" data-type="background" data-offsetY="0" style="background-position: 50% 0px">     
+  <div class="mask">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-offset-2 col-md-8">
+         <h1>Where Design<br>Meets Nature</h1>
+         <p>Set amidst forests and meadows with sweeping mountain views, Hudson Woods homes offer modern design that blends seamlessly with the natural surroundings.</p>
+       </div>
+     </div>
+   </div>
+ </div>
+</section>
+
+
+<section id="design-meets-nature" class="content">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-offset-2 col-md-8">
+        <div id="design-meets-nature-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#design-meets-nature-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#design-meets-nature-carousel" data-slide-to="1"></li>
+            <li data-target="#design-meets-nature-carousel" data-slide-to="2"></li>
+            <li data-target="#design-meets-nature-carousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/DesignNature-Approach.jpg" alt="...">
             </div>
-            <div class="col-md-6" style="margin-bottom:25px;">
-              <p class="cinfo tk-museo-slab muteColor">Tel 212 233 9187</p><p class="cinfo tk-museo-slab muteColor">Fax 212 658 9023</p> 
+            <div class="item">
+              <img src="img/New_DesignNature-Living.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/New_DesignNature-Kitchen.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/DesignNature-Bathroom.jpg" alt="...">
             </div>
           </div>
-        </div>
+        </div>    
+      </div>
+
+      <div class="col-md-offset-2 col-md-8">
+        <p>In the midst of the Hudson River Valley and just two hours from New York City, Hudson Woods is an experience that opens doors to discovering the things that matter. Family. Friends. Sport. Craft. Hudson Woods lets you access it all.</p>
+        <p>Encompassing 131 acres, Hudson Woods features 26 architect-designed dwellings meticulously crafted from locally-sourced, sustainable materials.</p>
+      </div>
+
+    </div>
+  </div>
+  <span id="smart-design-anchor"></span>
+</section>
+
+
+<section id="smart-design-intro" class="feature-intro" data-speed="5" data-type="background" data-offsetY="300"> 
+<div class="mask">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <h1>Smart Design</h1>
       </div>
     </div>
-    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="smart-design" class="content">
+<div class="container">
+  <div class="row">
+
     
-    <div style="background:#4c4f52;height:55px;">
-      <div class="container">
+    <div class="col-md-offset-2 col-md-8">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#current" data-toggle="tab">Current Availability</a></li>
+        <li><a href="#floor_plans" data-toggle="tab">Floor Plans</a></li>
+        <li><a href="#equipment_finishes" data-toggle="tab">Equipment &amp; Finishes</a></li>
+        <li><a href="#upgrades" data-toggle="tab">Upgrades</a></li>
+      </ul>
+    </div>
+
+
+    <div class="col-md-12 tab-content">
+
+      <div class="tab-pane fade in active" id="current">
+
         <div class="row">
-          <footer style="text-align:center;margin-top: 18px;">
-            <p class="tk-museo-slab"><a data-toggle="modal" href="#myModal" style="color:#f1e765">Legal Disclaimer</a> &copy; Hudson Woods</p>
-          </footer>
+          <div class="col-md-offset-3 col-md-9">
+            <span class="italic">PRICE SHOWN INCLUDES TOTAL COST OF LOT ACREAGE AND BASE HOUSE</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-offset-3 col-md-5 col-sm-10 col-xs-9">
+            <img src="img/Smart-Design-availability.jpg" class="responsive" alt="">
+          </div>
+               
+          <div class="col-md-4 col-sm-2 col-xs-3">
+            <h3>LOT 11</h3>
+            <h4>6.0 ACRES</h4>
+            <h4>$695,000</h4>
+            <h3>LOT 14</h3>
+            <h4>7.95 ACRES</h4>
+            <h4>$715,000</h4>
+            <h3>LOT 15</h3>
+            <h4>4.6 ACRES</h4>
+            <h4>$685,000</h4>
+            <h3>LOT 19</h3>
+            <h4>4.2 ACRES</h4>
+            <h4>$685,000</h4>
+            <h3>LOT 21</h3>
+            <h4>6.6 ACRES</h4>
+            <h4>$695,000</h4>
+            <h3>LOT 22</h3>
+            <h4>3.3 ACRES</h4>
+            <h4>$665,000</h4>
+            <h3>LOT 24</h3>
+            <h4>2.7 ACRES</h4>
+            <h4>$665,000</h4>
+          </div>
+        </div> 
+        
+        <div class="row promotional">
+          <div class="col-lg-12">
+            <button type="button" class="btn btn-default" data-target="#promoModal" data-container="body" data-toggle="modal" title="Promotional Offer" >
+              Limited Promotional Offer
+            </button>
+          </div>
+
+          <div class="modal fade" id="promoModal" tabindex="-1" role="dialog" aria-labelledby="legalDisclaimer" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="legalDisclaimer">Promotional Offer</h4>
+                </div>
+
+                <div class="modal-body">
+
+                  <div class="promoIntro">
+                      <h3>Complimentary gift voucher for first seven Hudson Woods Buyers</h3>
+                      <div class="promoOffer">
+                        <h1>$1,000</h1>
+                        <h3>Saunderskill<br>Farm Market</h3>
+                      </div>
+                  </div>
+
+                  <div class="promoBody">
+                      <h3>Saunderskill Farm Market</h3>
+                      <p>As part of our comittment to the local area and to our first seven home buyers. We would like to give a complimentary gift voucher to the wonderful Sauderskill Farm market in Accord, Hudson Valley.</p>
+                      <p>About 12 miles from the Hudson Woods property. The Saunderskill Farm Market and Greenhouse is one of the premier farm markets in the Hudson Valley. Specializing in farm-fresh produce, baked goods, and flowers with seasonal events and activites.</p>
+                      <p><a href="http://www.saunderskill.com/" target=>Learn More About Saunderskill</a></p>
+
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>       
+
+      </div>
+
+        <div class="tab-pane fade" id="floor_plans">
+          <div class="col-md-offset-1 col-md-4">
+            <h2>2,800</h2>
+            <h4>SQFT</h4>
+            <h2>3</h2>
+            <h4>BEDROOMS</h4>
+            <h2>2</h2>
+            <h4>BATHS</h4>
+            <h2>GARAGE/<br>STUDIO</h2>
+            <h4>+ CARPORT</h4>
+          </div>
+          <div class="col-md-7"><img src="img/Smart-Design-Floorplans.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="equipment_finishes">
+          <div class="row">
+
+            <div class="col-md-offset-2 col-md-4">
+              <div class="sprite icon hand"></div>
+              <h3>Hand Crafted Finishes</h3>
+              <span>Mahogany Windows</span>
+              <span>Rift and Quartersawn White Oak Flooring, Doors, Paneling and Cabinetry</span>
+              <span>Solid Bronze Hardware</span>
+              <span>Concrete Countertops</span>
+              <span>Cedar Siding and Decking</span>
+              <span>Standing Seam Metal Roofing</span>
+              <span>Stacked Stone Retaining Walls</span>
+            </div>
+
+            <div class="col-md-4">
+              <div class="sprite icon premium"></div>
+              <h3>Premium Equipment</h3>
+              <span>SMEG Appliances</span>
+              <span>BAXI High-Efficiency Hot Water Boiler and Radiators</span>
+              <span>In-Floor Radiant Heating at Master Bathroom</span>
+              <span>NEST Thermostats</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="upgrades">
+          <div class="row">
+
+            <div class="col-md-offset-1 col-md-2 col-sm-6">
+              <div class="sprite icon upgrade first"></div>
+              <h3>House Upgrades</h3>
+              <span>4th Bedroom Module</span>
+              <span>3rd Floor Addition</span>
+              <span>Stone House Cladding</span>
+              <span>Custom Floor Color</span>
+              <span>Copper Roofing</span>
+              <span>Powder Room</span>
+              <span>Kitchen Pantry</span>
+              <span>Kitchen Island</span>
+              <span>Additional Kitchen Cabinets</span>
+              <span>Screens at Doors and Windows</span>
+            </div>
+
+            <div class="col-md-2 col-sm-6">
+              <div class="sprite icon agricultural"></div>
+              <h3>Agriculture &amp; Landscaping</h3>
+              <span>Small Vegetable Garden</span>
+              <span>Large Vegetable Garden</span>
+              <span>Fruit Tree Grove<br><span class="italic">10 Trees</span></span>
+              <span>Fruit Tree Grove<span class="italic">30 Trees</span></span>
+              <span>Green House</span>
+            </div>
+
+            <div class="col-md-2 col-sm-6">
+              <div class="sprite icon accessories"></div>
+              <h3>Site Accessories</h3>
+              <span>Pool</span>
+              <span>Pool House / Sauna</span>
+              <span>Guest House</span>
+              <span>Screen Porch / Outdoor Cooking</span>
+              <span>Tree House</span>
+              <span>Bird House</span>
+              <span>Kid&#39;s Playhouse</span>
+            </div>
+
+            <div class="col-md-2 col-sm-6">
+              <div class="sprite icon sytems"></div>
+              <h3>Systems &amp; Equipment</h3>
+              <span>Wood Stove</span>
+              <span>In-Floor Radiant Heating<br><span class="italic">Lower Level Only</span></span>
+              <span>In-Floor Radiant Heating<br><span class="italic">Full House</span></span>
+              <span>Solar Photovoltaic Energy System</span>
+              <span>Wind Energy System</span>
+              <span>Solar PV + Wind Energy System</span>
+              <span>Electric Car Charger at Studio / Garage</span>
+              <span>Generator<br><span class="italic">Entire House</span></span>
+              <span>Generator<br><span class="italic">Partial House</span></span>
+              <span>Constant Pressure Well Pump System</span>
+            </div>
+
+            <div class="col-md-2 col-sm-6">
+              <div class="sprite icon a_la_carte"></div>
+              <h3>A La Carte Services</h3>
+              <span>House and Property Maintenance</span>
+              <span>House Rental</span>
+              <span>Gardening and Landscaping</span>
+              <span>Beekeeping</span>
+              <span>Food Shopping / Chef Services</span>
+              <span>Transportation</span>
+              <span>Personal Assistant Services</span>
+              <span>Pet Care</span>
+              <span>Personal Training</span>
+              <span>Sport and Outdoor Guide</span>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+<span id="real-living-anchor"></span>
+</section>
+
+
+<section id="real-living-intro" class="feature-intro" data-speed="5" data-type="background" data-offsetY="640">     
+  <div class="mask">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <h1>Real Living</h1>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Legal Disclaimer</h4>
+
+<section id="real-living" class="content">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-offset-2 col-md-8">
+        <div id="real-living-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#real-living-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#real-living-carousel" data-slide-to="1"></li>
+            <li data-target="#real-living-carousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/DesignNature-Catskills.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/DesignNature-Cycling.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/DesignNature-Beets.jpg" alt="...">
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="modal-body">
-        <p>All photographs and artist’s renderings are for representational and promotional purposes only. Not all items depicted in artist’s renderings are included in the purchase price of a home. All layouts and calculations are approximate and may vary. Plans shown represent model unit and are indicative of base house. Actual configuration may vary to suit site conditions of individual lots. All dimensions are approximations and subject to normal construction variances and tolerances. Square footage exceeds the usable floor area. Prices shown refer to the base home and do not include any optional or custom features and all prices, availability, designs and specifications may change without notice. Please consult the seller’s sales personnel for specific price information for each home site and optional and custom features. All information provided herein is from sources deemed reliable, but no warranty or representation is made as to the accuracy thereof and same is submitted subject to errors, omissions, change of price or other conditions, prior sale, lease or withdrawal without notice. THIS IS NOT AN OFFERING. ALL TERMS OF SALE ARE CONTAINED IN THE SALES AND PURCHASE AGREEMENT FOR AN INDIVIDUAL HOME EXECUTED BY SELLER AND AN APPROVED PURCHASER. We are pledged to the letter and the spirit of U.S. policy for the achievement of equal housing op    portunity throughout the Nation. We encourage and support an affirmative advertising and marketing program in which there are no barriers to obtaining housing because of race, color, religion, sex, handicap, familial status or national origin. These materials (c) Ridgewood Eco-Homes LLC. All copyrights, trademarks and service marks are the property of Ridgewood Eco-Homes LLC and may not be used without the permission of Ridgewood Eco-Homes LLC.</p>
+
+      <div class="col-md-offset-2 col-md-8">
+        <p>Life at Hudson Woods is real, authentic and slower. Relax, reflect and enjoy your life, your way</p>
+        <p>Curate the life you really want. From the materials and nature surrounding you to the environment that you become a part of, everything you seek is well within reach.</p>
+        <p>Each home features modern, eco-friendly design constructed from materials sourced from surrounding areas. The homes and site set new standards for design and sustainability excellence.</p>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+    </div>
+  </div>
+  <span id="true-experience-anchor"></span>
+</section>
+
+
+<section id="true-experience-intro" class="feature-intro" data-speed="5" data-type="background" data-offsetY="900">
+<div class="mask">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <h1>True Experience</h1>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+    </div>
+  </div>
+</div>
+</section> 
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="legacy/js/bootstrap.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-46418002-1', 'hudsonwoods.com');
-  ga('send', 'pageview');
+<section id="true-experience" class="content beige">
+<div class="container">
 
-</script>
-  </body>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <h2>&ldquo;To Create Authentic, Meaningful Experiences At Every Turn&rdquo;</h2>
+      <h4><a href="http://www.drewlang.com/" target="_blank"><span>Drew Lang, Lang Architecture</span></a></h4>
+      <br>
+    </div>
+  </div>  
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <img src="img/handtools.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 col-centered">
+      <p>At Lang Architecture, that&lsquo;s our mission. It is the driving force behind every decision we make at Hudson Woods. Through design, craft and sustainability, Hudson Woods  offers just the right elements at just the right time. The site, the homes, the access, the aesthetic. Everything comes together to create a rich, unique experience and incredible value for buyers today.</p>
+    </div>
+  </div>
+
+  <div class="row partners">
+
+    <div class="col-md-offset-1 col-md-2 col-sm-6 col-xs-12 partner-section">
+      <a class="sprite lang" target="blank" href="http://www.langarchitecture.com"></a>
+      <span>Architecture</span>
+    </div>
+
+    <div class="col-md-2 col-sm-6 col-xs-12 partner-section">
+      <a class="sprite ldco" target="blank" href="http://www.langarchitecture.com"></a>
+      <span>Development</span>
+    </div>
+
+    <div class="col-md-2 col-sm-6 col-xs-12 partner-section">
+      <a class="sprite town" target="blank" href="http://www.townrealestate.com/"></a>
+      <span>Sales</span>
+    </div>
+
+    <div class="col-md-2 col-sm-6 col-xs-12 partner-section">
+      <a class="sprite hundred" target="blank" href="http://hundredstoriespr.com/"></a>
+      <span>Media &amp; PR</span>
+    </div>
+
+    <div class="col-md-2 col-sm-12 col-xs-12 partner-section">
+      <a class="sprite sanderson" target="blank" href="http://www.studiosanderson.com/"></a>
+      <span>Brand &amp; Marketing</span>
+    </div>
+
+  </div>
+</div>
+<span id="contact-anchor"></span>
+</section>
+
+
+<section id="contact-intro" class="feature-intro" data-speed="5" data-type="background" data-offsetY="1300">
+<div class="mask">
+  <h1>Get In Touch</h1>
+</div>
+</section>
+
+
+<section id="contact" class="content">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3">
+
+        <h2>Sales Enquiries</h2>
+
+        <form role="form" id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://sandersonj.wufoo.com/forms/z1jr7bc1537af2/#public">
+        <input type="hidden" name="idstamp" id="idstamp" value="YourPostKey" />
+        <div class="form-group">
+        <label id="title8" for="Field8" class="desc">Name<span>Required</span></label>
+        <input id="Field8" name="Field8" type="text" class="form-control" value="" tabindex="1" onkeyup=""/>
+        </div>
+        
+        <div class="form-group">
+          <label id="Field3" for="Field3" class="desc">Email Address<span>Required</span></label>
+          <input id="Field3" name="Field3" type="email" spellcheck="false" tabindex="2" class="form-control"/>
+        </div>
+        <label for="exampleTextArea1" id="title4" class="desc">How Can We Help?</label>
+        <textarea id="Field4" name="Field4" tabindex="3" class="form-control text-area" rows="10"></textarea>
+        
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input id="saveForm" name="saveForm" class="submit" tabindex="4" type="checkbox">Subscribe to email updates
+            </label>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-green">Submit</button>
+        <li class="hide">
+          <label for="comment">Do Not Fill This Out</label>
+          <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+          <input type="hidden" id="idstamp" name="idstamp" tabindex="5" value="kDKnwgsxUQRl99RUwj7mCA+Rjx0E7+LyTxdubka1d5c=" />
+        </li>
+
+       </form>
+       <label class="direct">Or contact us directly:<br><a class="email" href="mailto:sales@hudsonwoods.com">sales@hudsonwoods.com</a></label>
+    </div>
+
+    <div class="col-md-offset-1 col-md-3">
+      <h2>Mortgage Partners</h2>
+      <p>WELLS FARGO HOME MORTGAGE</p>
+      <p>Gillian Harper</p>
+      <p>NMLSR ID 404647</p>
+      <p>O: (845) 334-2609</p>
+      <p>C: (914) 466-8081</p>
+      <p><a href="mailto:Gillian.Harper@wellsfargo.com">Gillian.Harper@wellsfargo.com</a></p>
+      <br>
+      <p>ULSTER SAVINGS BANK</p>
+      <p>Greg Eckert</p>
+      <p>NMLS  ID 4935</p>
+      <p>O: (845) 338-6322 ext. 3261</p>
+      <p>C: (845) 417- 5527</p>
+      <p><a href="mailto:geckert@ulstersavings.com">geckert@ulstersavings.com</a></p>
+      <br>
+      <p>RONDOUT SAVINGS BANK</p>
+      <p>Michael Kinsch</p>
+      <p>NMLS ID 768988</p>
+      <p>O: (845) 334-4023  </p>
+      <p>C: (845) 706-2669</p>
+      <p><a href="mailto:mkinsch@rondoutsavings.com">mkinsch@rondoutsavings.com</a></p>
+      </br>
+    </div>
+
+    <div class="col-md-offset-1 col-md-3">
+      <h2>Media Contacts</h2>
+      <p>HUNDRED STORIES PR</p>
+      <p>Yael Goldman</p>
+      <p>O: 212.570.2700 </p>
+      <p><a href="mailto:Yael@hundredstoriespr.com">Yael@hundredstoriespr.com</a></p>
+      <h2 class="map">Visit Us</h2>
+      <div id="map-info">
+      <a href="https://www.google.com/maps/preview/place/Hudson+Woods/@41.8838397,-74.3105647,17z/data=!4m2!3m1!1s0x0:0xb071e22e4a6d3201?hl=en" target="blank"><img src="img/map.jpg" alt=""></a>
+      <br>
+      <a href="https://www.google.com/maps/preview/place/Hudson+Woods/@41.8838397,-74.3105647,17z/data=!4m2!3m1!1s0x0:0xb071e22e4a6d3201?hl=en" target="blank">1 Ridgewood Road, Kerhonkson, NY</a>
+      </div>
+      <div class="map-button">
+         
+      </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+<section id="footer" class="content">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6 col-md-push-6 social">
+        <a href="https://www.facebook.com/hudsonwoodsny" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+        <a href="https://twitter.com/HudsonWoodsNY" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+        <a href="http://www.pinterest.com/hudsonwoodsny/" target="_blank"><i class="fa fa-pinterest fa-lg"></i></a>
+        <a href="http://instagram.com/hudsonwoodsny" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>       
+      </div>
+
+      <div class="col-md-6 col-md-pull-6 legal-text">
+        <p>&copy; 2014 Hudson Woods. All Rights Reserved.</p>
+        <a class="legal"data-toggle="modal" data-target="#myModal">Legal Disclaimer</a>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="legalDisclaimer" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="legalDisclaimer">Legal Disclaimer</h4>
+              </div>
+              
+              <div class="modal-body">
+                <p>All photographs and artist&apos;s renderings are for representational and promotional purposes only. Not all items depicted in artist&apos;s renderings are included in the purchase price of a home. All layouts and calculations are approximate and may vary. Plans shown represent model unit and are indicative of base house. Actual configuration may vary to suit site conditions of individual lots. All dimensions are approximations and subject to normal construction variances and tolerances. Square footage exceeds the usable floor area. Prices shown refer to the base home and do not include any optional or custom features and all prices, availability, designs and specifications may change without notice.</p>
+                <p>Please consult the seller&apos;s sales personnel for specific price information for each home site and optional and custom features. All information provided herein is from sources deemed reliable, but no warranty or representation is made as to the accuracy thereof and same is submitted subject to errors, omissions, change of price or other conditions, prior sale, lease or withdrawal without notice.</p>
+                <p>THIS IS NOT AN OFFERING. ALL TERMS OF SALE ARE CONTAINED IN THE SALES AND PURCHASE AGREEMENT FOR AN INDIVIDUAL HOME EXECUTED BY SELLER AND AN APPROVED PURCHASER.</p> 
+                <p>We are pledged to the letter and the spirit of U.S. policy for the achievement of equal housing op portunity throughout the Nation. We encourage and support an affirmative advertising and marketing program in which there are no barriers to obtaining housing because of race, color, religion, sex, handicap, familial status or national origin.</p>
+                <p>These materials (c) Ridgewood Eco-Homes LLC. All copyrights, trademarks and service marks are the property of Ridgewood Eco-Homes LLC and may not be used without the permission of Ridgewood Eco-Homes LLC.</p>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<span id="bottom"></span>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/build.min.js"></script>
+
+</body>
 </html>
+
+
+
+
+
