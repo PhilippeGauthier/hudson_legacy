@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="font-awesome-4.0.0/css/font-awesome.min.css">
+    <title>Hudson Woods</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+<script type="text/javascript" src="http://use.typekit.net/wqx1grc.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+
+<style>
+.navbar-wrapper {height: 64px;position:fixed;top:0;left:0;z-index:99;width:100%;}
+.navbar {border:0px !important;}
+#navHeader {height: 64px;}
+#git_button {float:right;margin-top:22px;background-color: transparent;padding:5px 12px 4px;}
+#git_button:hover {background:#45454c !important;color:#f1e765;}
+#social i {font-size:60px;color:#dbdbdb;margin:10px 6%;}
+#social a {text-decoration: none}
+p#social {text-align: center}
+#social i:hover {color:#b6b6b6;}
+.lessMuted {color:#45454c;}
+.muteColor {color:#4c4f52;}
+#saveForm {background: #25b1bf;color:white;width:150px;}
+label{font-weight:bold;margin-bottom:5px;}
+form li {list-style: none;margin-bottom:25px;}
+.cinfo {font-size:14px;margin-bottom: 2px;}
+input,textarea {font-size:20px;}
+textarea {width:100%;}
+ul {padding-left:0px;}
+footer p {color:white;}
+#maincopy {background:white;text-align:center;margin-top:25px;display:none}
+#myCarousel .item{
+  height:600px;
+  background:no-repeat top center;
+}
+#logo{
+  width:auto;height:47px;
+}
+.carousel{
+  margin-top:64px;
+}
+
+.carousel-content{
+  max-width:1170px;
+  margin:0 auto;
+  width:90%;
+  padding-left:30px;
+  padding-right:30px;
+}
+.carousel h2{
+  margin-top:0;
+  font-size:76px;
+  line-height:80px;
+  width:54%;
+}
+.carousel p{
+  font-size:22px;
+  line-height:30px;
+  width:67%;
+}
+#item1 .carousel-content{
+  padding-top:104px;
+}
+#item1 .carousel-content h2{
+  color:#f1e765;
+}
+#item1 .carousel-content p{
+  color:#fff;
+}
+
+#item2 .carousel-content{
+  padding-top:94px;
+}
+#item2 .carousel-content h2{
+  color:#0099CC;
+}
+#item2 .carousel-content p{
+  color:#202020;
+}
+
+#item3 .carousel-content{
+  padding-top:182px;
+}
+#item4 .carousel-content h2{
+  color:#202020;
+  width:65%;
+}
+#item4 .carousel-content p{
+  color:#202020;
+}
+#item4 .carousel-content{
+  padding-top:186px;
+}
+#item3 .carousel-content h2{
+  color:#f1e765;
+}
+#item3 .carousel-content p{
+  color:#fff;
+}
+@media only screen and (min-width: 768px) {
+  #maincopy {display:block !important}
+  
+}
+@media only screen and (max-width: 1170px) {
+  .carousel-content{max-width:970px;}
+}
+@media only screen and (max-width: 992px) {
+  .carousel-content{max-width:750px;}
+}
+@media only screen and (max-width: 768px) {
+  .carousel-content{max-width:750px;width:auto;}
+}
+@media only screen and (max-width: 870px) {
+  #myCarousel .item{/*background-position-x:40%;background-size:cover;height:400px;*/}
+  .carousel h2, .carousel p{
+    width:100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #social i{margin:10px 5%;}
+  #item1 .carousel-content, #item2 .carousel-content, #item3 .carousel-content, #item4 .carousel-content{
+    padding-top:25px;
+  }
+  #myCarousel .item{background-size:cover;height:400px;}
+  .carousel-content{
+    
+    margin-left:15px;
+    margin-right:15px;
+    padding:25px 0 0;
+  }
+  .carousel h2{
+    font-size:46px;
+    line-height:50px;
+  }
+  .carousel p{
+    font-size:15px;
+    line-height:20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  #social i{margin:10px 3%;}
+}
+
+</style>
+
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <div class="navbar-wrapper" style="background:#F2f0e6">
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top"  style="background:#F2f0e6">
+          <div class="container" id="navHeader">
+            <a type="button" class="btn btn-default tk-museo-slab" id="git_button" href="#contact" >Get in touch</a>
+            <div class="navbar-header">
+            <!--
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            -->
+              <img src="assets/HW_Logo_web_V2.png" style="margin-top: 7px;" id="logo">
+            </div>
+            
+            <div class="navbar-collapse collapse">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+        <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div id="item1" class="item active" style="background-image:url(assets/HWCarousel1.jpg)">
+          <div class="carousel-content container">
+            <h2 class="tk-museo-slab">Straight From the Source</h2>
+            <p class="tk-museo-slab">In the midst of the Hudson River Valley and just two hours from New York City, Hudson Woods takes you straight to the source &ndash; the place for nature and design, for family and friendships, for exploring what matters most to you.</p>
+          </div>
+        </div>
+        <div id="item2" class="item" style="background-image:url(assets/HWCarousel2.jpg)">
+          <div class="carousel-content container">
+            <h2 class="tk-museo-slab">Where Design Meets Nature</h2>
+            <p class="tk-museo-slab">Set amidst forests and meadows with sweeping mountain views, Hudson Woods homes offer modern design that blends seamlessly with the natural surroundings.</p>
+          </div>
+        </div>
+        <div id="item3" class="item" style="background-image:url(assets/HWCarousel3.jpg)">
+          <div class="carousel-content container">
+            <h2 class="tk-museo-slab">Smart Design</h2>
+            <p class="tk-museo-slab">Each home features modern, eco-friendly design constructed from materials sourced from surrounding areas. The homes and site set new standards for design and sustainability excellence.</p>
+          </div>
+        </div>
+        <div id="item4" class="item" style="background-image:url(assets/HWCarousel4.jpg)">
+          <div class="carousel-content container">
+            <h2 class="tk-museo-slab">True Experience</h2>
+            <p class="tk-museo-slab">More than a place, Hudson Woods is an experience that opens doors to discovering the things that matter. Family. Friends. Sport. Craft. Hudson Woods lets you access it all.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> -->
+    </div><!-- /.carousel -->
+
+    <div class="container" id="maincopy">
+      <div class="row">
+        <p class="tk-museo-slab lessMuted" style="font-size:29pt" >"To Create Authentic, Meaningful Experiences At Every Turn"</p>
+        <p class="tk-museo-slab lessMuted" style="font-size:16pt">Drew Lang, Lang Architecture</p>
+      </div>
+    </div>
+
+    <div style="background:#f1f1f1;">
+    <div class="container" style="padding-top:30px">
+      <div class="row">
+        <div class="col-md-6">
+          <p style="font-size:16pt" class="tk-museo-slab muteColor" id="contact">Get In Touch to Learn More!</h3>
+
+          <!-- -->
+          <form id="form1" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+                action="https://sandersonj.wufoo.com/forms/z1jr7bc1537af2/#public">
+
+
+          <ul>
+
+          <li id="foli1" class="notranslate      ">
+          <label class="desc muteColor tk-museo-slab " id="title8" for="Field8" style="display:block;">
+          Name
+          </label>
+
+          <input id="Field8" name="Field8" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" required style="width:100%" />
+
+
+
+
+
+
+
+
+          </li>
+          <li id="foli3" class="notranslate      ">
+          <label class="desc muteColor tk-museo-slab " id="title3" for="Field3">
+          Email
+          </label>
+          <div>
+          <input id="Field3" name="Field3" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="3" required style="width:100%" /> 
+          </div>
+          </li>
+          <li id="foli4" 
+          class="notranslate      "><label class="desc muteColor tk-museo-slab " id="title4" for="Field4">
+          How Can We Help?
+          </label>
+
+          <div>
+            <textarea id="Field4"name="Field4"class="field textarea medium"spellcheck="true"rows="6" cols="50"tabindex="4"onkeyup=""></textarea>
+          </div>
+          </li> 
+          <li class="buttons ">
+            <div>
+              <input id="saveForm" name="saveForm" class="tk-museo-slab btn btTxt submit" 
+              type="submit" value="Submit"/>
+           </div>
+          </li>
+
+          <li class="hide">
+            <label for="comment">Do Not Fill This Out</label>
+            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+            <input type="hidden" id="idstamp" name="idstamp" value="kDKnwgsxUQRl99RUwj7mCA+Rjx0E7+LyTxdubka1d5c=" />
+          </li>
+        </ul>
+      </form> 
+          <!-- -->
+
+
+        </div>
+        <div class="col-md-6">
+          <div style="padding:15px;background:white">
+            <p style="font-size:21px;margin-bottom:40px" class="muteColor tk-museo-slab">Follow Us</p>
+            <p id="social">
+            <a href="https://www.facebook.com/hudsonwoodsny">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="http://www.twitter.com/hudsonwoodsny">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="http://www.pinterest.com/hudsonwoodsny/">
+              <i class="fa fa-pinterest"></i>
+            </a>
+            <a href="http://instagram.com/hudsonwoodsny">
+              <i class="fa fa-instagram"></i>
+            </a>
+            </p>
+          </div>
+          <div class="row" style="margin-top:50px">
+            <div class="col-md-6">
+              <p class="cinfo tk-museo-slab muteColor">225 Broadway, Suite 3001</p>
+              <p class="cinfo tk-museo-slab muteColor">New York, NY 10007</p> 
+            </div>
+            <div class="col-md-6" style="margin-bottom:25px;">
+              <p class="cinfo tk-museo-slab muteColor">Tel 212 233 9187</p><p class="cinfo tk-museo-slab muteColor">Fax 212 658 9023</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div style="background:#4c4f52;height:55px;">
+      <div class="container">
+        <div class="row">
+          <footer style="text-align:center;margin-top: 18px;">
+            <p class="tk-museo-slab"><a data-toggle="modal" href="#myModal" style="color:#f1e765">Legal Disclaimer</a> &copy; Hudson Woods</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Legal Disclaimer</h4>
+      </div>
+      <div class="modal-body">
+        <p>All photographs and artist’s renderings are for representational and promotional purposes only. Not all items depicted in artist’s renderings are included in the purchase price of a home. All layouts and calculations are approximate and may vary. Plans shown represent model unit and are indicative of base house. Actual configuration may vary to suit site conditions of individual lots. All dimensions are approximations and subject to normal construction variances and tolerances. Square footage exceeds the usable floor area. Prices shown refer to the base home and do not include any optional or custom features and all prices, availability, designs and specifications may change without notice. Please consult the seller’s sales personnel for specific price information for each home site and optional and custom features. All information provided herein is from sources deemed reliable, but no warranty or representation is made as to the accuracy thereof and same is submitted subject to errors, omissions, change of price or other conditions, prior sale, lease or withdrawal without notice. THIS IS NOT AN OFFERING. ALL TERMS OF SALE ARE CONTAINED IN THE SALES AND PURCHASE AGREEMENT FOR AN INDIVIDUAL HOME EXECUTED BY SELLER AND AN APPROVED PURCHASER. We are pledged to the letter and the spirit of U.S. policy for the achievement of equal housing op    portunity throughout the Nation. We encourage and support an affirmative advertising and marketing program in which there are no barriers to obtaining housing because of race, color, religion, sex, handicap, familial status or national origin. These materials (c) Ridgewood Eco-Homes LLC. All copyrights, trademarks and service marks are the property of Ridgewood Eco-Homes LLC and may not be used without the permission of Ridgewood Eco-Homes LLC.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
